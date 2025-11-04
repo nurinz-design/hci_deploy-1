@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영어/한국어 학습 앱 | English/Korean Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">영어/한국어 학습 앱</h1>
+            <button class="lang-toggle" id="langToggle">🌐 English</button>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2 id="subtitle">단어 학습하기</h2>
+
+                <div class="word-display">
+                    <div class="word-box">
+                        <span id="currentWord" class="word">안녕하세요</span>
+                    </div>
+                    <div class="translation-box">
+                        <span id="translation" class="translation">Hello</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-primary" id="nextWord">
+                        <span id="nextBtnText">다음 단어</span> →
+                    </button>
+                    <button class="btn btn-secondary" id="flipCard">
+                        <span id="flipBtnText">뒤집기</span> 🔄
+                    </button>
+                </div>
+
+                <div class="word-list">
+                    <h3 id="wordListTitle">학습 단어 목록</h3>
+                    <div id="wordListContainer"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footerText">배포 연습용 프로젝트 - Railway & Vercel</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
